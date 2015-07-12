@@ -1,0 +1,18 @@
+# R/RStudio files:
+*.Rproj
+.Rproj.user
+.Rhistory
+.RData
+
+# compiled/precompiled files
+*.o
+*.so
+*.dll
+*.a
+src-i386/
+src-x64/
+
+# backup files
+*~
+*.backup
+*.bak
