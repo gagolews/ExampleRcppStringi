@@ -14,4 +14,3 @@ CharacterVector test_paste(CharacterVector x) {
    u = stri_flatten(u, CharacterVector(", "));
    return u;
 }
-
