@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // test_dup
 CharacterVector test_dup(CharacterVector x, IntegerVector i);
-RcppExport SEXP RcppStringiExample_test_dup(SEXP xSEXP, SEXP iSEXP) {
+RcppExport SEXP ExampleRcppStringi_test_dup(SEXP xSEXP, SEXP iSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // test_paste
 CharacterVector test_paste(CharacterVector x);
-RcppExport SEXP RcppStringiExample_test_paste(SEXP xSEXP) {
+RcppExport SEXP ExampleRcppStringi_test_paste(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
