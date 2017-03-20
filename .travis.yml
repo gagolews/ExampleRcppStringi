@@ -1,2 +1,15 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
 language: r
+matrix:
+  include:
+  - os: linux
+    r: devel
+    addons:
+        apt:
+            packages:
+                - libicu-dev
+
 warnings_are_errors: true
+r_build_args: "--no-manual"
+r_check_args: "--no-manual --as-cran"

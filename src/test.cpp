@@ -1,3 +1,4 @@
+#define R_NO_REMAP
 #include <stringi.h>
 #include <Rcpp.h>
 using namespace Rcpp;
