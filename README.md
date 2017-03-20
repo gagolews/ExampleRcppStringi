@@ -1,5 +1,7 @@
 # ExampleRcppStringi
 
+[![Build Status](https://travis-ci.org/gagolews/ExampleRcppStringi.svg?branch=master)](https://travis-ci.org/gagolews/ExampleRcppStringi)
+
 This is a showcase package that depends both on [Rcpp](http://www.rcpp.org/)
 and the [stringi](https://github.com/gagolews/stringi/) C API.
 
