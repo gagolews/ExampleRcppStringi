@@ -21,4 +21,3 @@ Duplicates a given string
 test_dup("A", 1)
 
 }
-

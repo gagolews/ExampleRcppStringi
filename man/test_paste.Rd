@@ -19,4 +19,3 @@ Concatenates all strings into a single one
 test_paste(letters)
 
 }
-

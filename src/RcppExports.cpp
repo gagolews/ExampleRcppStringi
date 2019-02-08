@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // test_dup
 CharacterVector test_dup(CharacterVector x, IntegerVector i);
-RcppExport SEXP ExampleRcppStringi_test_dup(SEXP xSEXP, SEXP iSEXP) {
+RcppExport SEXP _ExampleRcppStringi_test_dup(SEXP xSEXP, SEXP iSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // test_paste
 CharacterVector test_paste(CharacterVector x);
-RcppExport SEXP ExampleRcppStringi_test_paste(SEXP xSEXP) {
+RcppExport SEXP _ExampleRcppStringi_test_paste(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -27,4 +27,15 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(test_paste(x));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_ExampleRcppStringi_test_dup", (DL_FUNC) &_ExampleRcppStringi_test_dup, 2},
+    {"_ExampleRcppStringi_test_paste", (DL_FUNC) &_ExampleRcppStringi_test_paste, 1},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_ExampleRcppStringi(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }

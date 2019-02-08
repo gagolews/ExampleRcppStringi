@@ -2,8 +2,8 @@
 % Please edit documentation in R/ExampleRcppStringi-package.R
 \docType{package}
 \name{ExampleRcppStringi-package}
-\alias{ExampleRcppStringi}
 \alias{ExampleRcppStringi-package}
+\alias{ExampleRcppStringi}
 \title{A stringi-dependent Rcpp package example}
 \description{
 A stringi-dependent Rcpp package example
@@ -11,4 +11,3 @@ A stringi-dependent Rcpp package example
 \author{
 Marek Gagolewski
 }
-

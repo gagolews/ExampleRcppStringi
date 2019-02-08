@@ -11,7 +11,7 @@
 #'
 #' @export
 test_dup <- function(x, i) {
-    .Call('ExampleRcppStringi_test_dup', PACKAGE = 'ExampleRcppStringi', x, i)
+    .Call('_ExampleRcppStringi_test_dup', PACKAGE = 'ExampleRcppStringi', x, i)
 }
 
 #' Concatenates all strings into a single one
@@ -23,6 +23,6 @@ test_dup <- function(x, i) {
 #'
 #' @export
 test_paste <- function(x) {
-    .Call('ExampleRcppStringi_test_paste', PACKAGE = 'ExampleRcppStringi', x)
+    .Call('_ExampleRcppStringi_test_paste', PACKAGE = 'ExampleRcppStringi', x)
 }
 
