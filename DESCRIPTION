@@ -1,10 +1,10 @@
 Package: ExampleRcppStringi
 Type: Package
-Title: A stringi-dependent Rcpp package example
+Title: A stringi-dependent Rcpp Package Example
 Version: 1.0.2
-Date: 2019-02-08
-Author: Marek Gagolewski
-Maintainer: Marek Gagolewski <gagolews@rexamine.com>
+Date: 2019-03-13
+Author: Marek Gagolewski [aut, cre] (<https://orcid.org/0000-0003-0637-6028>)
+Maintainer: Marek Gagolewski <marek@gagolewski.com>
 Description: An exemple Rcpp package that uses stringi's C API.
 License: GPL (>= 2)
 Depends:
@@ -16,4 +16,4 @@ LinkingTo: Rcpp, stringi (>= 1.1)
 Suggests:
     testthat
 RoxygenNote: 6.1.1
-Encoding: UTF-8 
+Encoding: UTF-8
