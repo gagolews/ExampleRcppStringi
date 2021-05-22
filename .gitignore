@@ -16,3 +16,5 @@ src-x64/
 *~
 *.backup
 *.bak
+
+src/symbols.rds
