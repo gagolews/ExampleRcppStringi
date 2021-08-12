@@ -1,0 +1,28 @@
+name: ExampleRcppStringi for R
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get -y upgrade
+        sudo apt-get -y install libcurl4-openssl-dev r-base-dev devscripts libicu-dev language-pack-pl
+        sudo Rscript -e "install.packages(c('testhat', 'stringi', 'Rcpp'))"
+    - name: Install ExampleRcppStringi
+      run: |
+        sudo R CMD INSTALL .
+    - name: Test ExampleRcppStringi
+      run: |
+        sudo make test
+    - name: Check ExampleRcppStringi
+      run: |
+        sudo make check

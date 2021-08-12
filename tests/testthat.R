@@ -1,3 +1,5 @@
-library("testthat")
 library("ExampleRcppStringi")
-test_check("ExampleRcppStringi")
+
+if (require("testthat", quietly=TRUE)) {
+    test_check("ExampleRcppStringi")
+}

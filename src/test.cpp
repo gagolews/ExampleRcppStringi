@@ -1,7 +1,8 @@
-#define R_NO_REMAP
-#include <stringi.h>
 #include <Rcpp.h>
 using namespace Rcpp;
+
+// include after Rcpp.h:
+#include <stringi.h>
 
 //' Duplicates a given string
 //' @param x a character vector

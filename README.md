@@ -1,7 +1,7 @@
 # ExampleRcppStringi
 
 This is a showcase package that depends both on [Rcpp](http://www.rcpp.org/)
-and the [stringi](https://github.com/gagolews/stringi/) C API.
+and the [stringi](https://stringi.gagolewski.com) C API.
 
 The `src/import_stringi.cpp` file aims to set up all the required `GetCCallables`.
 

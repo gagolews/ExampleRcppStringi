@@ -1,11 +1,11 @@
 Package: ExampleRcppStringi
 Type: Package
-Title: Using stringi in an Rcpp Package
-Version: 1.0.2
-Date: 2021-05-24
+Title: How to Use 'stringi' in an 'Rcpp' Package
+Version: 1.0.3
+Date: 2021-08-12
 Author: Marek Gagolewski [aut, cre] (<https://orcid.org/0000-0003-0637-6028>)
 Maintainer: Marek Gagolewski <marek@gagolewski.com>
-Description: An example Rcpp package that uses stringi's C API.
+Description: An example 'Rcpp' package that uses the C API of 'stringi'.
 License: GPL (>= 2)
 Depends:
     R (>= 3.0.2)
