@@ -18,3 +18,4 @@ src-x64/
 *.bak
 
 src/symbols.rds
+..Rcheck
