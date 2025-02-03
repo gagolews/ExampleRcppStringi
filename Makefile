@@ -17,7 +17,7 @@ reload: r
 	fi
 
 testthat:
-	cd tests && Rscript -e 'source("testthat.R")'
+	Rscript -e 'testthat::test_package("ExampleRcppStringi")'
 
 test: r testthat
 
