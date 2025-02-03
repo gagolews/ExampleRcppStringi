@@ -2,7 +2,7 @@ Package: ExampleRcppStringi
 Type: Package
 Title: How to Use 'stringi' in an 'Rcpp' Package
 Version: 1.0.3
-Date: 2023-04-10
+Date: 2025-02-03
 Author: Marek Gagolewski [aut, cre] (<https://orcid.org/0000-0003-0637-6028>)
 Maintainer: Marek Gagolewski <marek@gagolewski.com>
 Description: An example 'Rcpp' package that uses the C API of 'stringi'.

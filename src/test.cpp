@@ -15,7 +15,7 @@ using namespace Rcpp;
 //' @export
 // [[Rcpp::export]]
 CharacterVector test_dup(CharacterVector x, IntegerVector i) {
-   return stri_dup(x, i);
+    return stri_dup(x, i);
 }
 
 
@@ -29,8 +29,8 @@ CharacterVector test_dup(CharacterVector x, IntegerVector i) {
 //' @export
 // [[Rcpp::export]]
 CharacterVector test_paste(CharacterVector x) {
-   IntegerVector y(seq_len(x.size()));
-   CharacterVector u = stri_join2(x, y);
-   u = stri_flatten(u, CharacterVector(", "));
-   return u;
+    IntegerVector y(seq_len(x.size()));
+    CharacterVector u = stri_join2(x, y);
+    u = stri_flatten(u, CharacterVector(", "));
+    return u;
 }
