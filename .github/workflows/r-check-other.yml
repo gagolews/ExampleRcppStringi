@@ -51,7 +51,7 @@ jobs:
       - name: Test
         run: |
           install.packages("testthat")
-          source("tests/testthat.R")
+          testthat::test_package("ExampleRcppStringi")
         shell: Rscript {0}
 
       - name: Check
